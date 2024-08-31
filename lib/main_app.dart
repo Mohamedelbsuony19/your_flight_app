@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
           // locale: const Locale('en'),
           localizationsDelegates: AppLang.localizationsDelegates,
           supportedLocales: AppLang.supportedLocales,
-          title: 'AlKhbaz',
+          title: 'SAMH Task',
         );
       },
     );

@@ -33,5 +33,9 @@
     "flightsAvailable": "الرحلات المتاحة",
     "selectClass": "اختر الفئة",
     "selectTripType": "اختر نوع الرحلة",
-    "startSearch":"ابحث اولا لترى النتائج !"
+    "startSearch":"ابحث اولا لترى النتائج !",
+    "searchDone":"تم البحث بنجاح",
+    "searchResults":"نتائج البحث",
+    "selectLanguage":"اختر اللغة"
+
 }

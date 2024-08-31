@@ -33,5 +33,9 @@
     "flightsAvailable": "Flights available",
     "selectClass": "Select Class",
     "selectTripType": "Select Trip Type",
-    "startSearch": "Start searching to see the result ..!"
+    "startSearch": "Start searching to see the result ..!",
+    "searchDone": "Search Done",
+    "searchResults": "Search Results",
+    "selectLanguage": "Select Language"
+    
 }

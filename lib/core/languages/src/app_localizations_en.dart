@@ -107,4 +107,13 @@ class AppLangEn extends AppLang {
 
   @override
   String get startSearch => 'Start searching to see the result ..!';
+
+  @override
+  String get searchDone => 'Search Done';
+
+  @override
+  String get searchResults => 'Search Results';
+
+  @override
+  String get selectLanguage => 'Select Language';
 }

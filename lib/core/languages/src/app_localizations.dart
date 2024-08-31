@@ -298,6 +298,24 @@ abstract class AppLang {
   /// In ar, this message translates to:
   /// **'ابحث اولا لترى النتائج !'**
   String get startSearch;
+
+  /// No description provided for @searchDone.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم البحث بنجاح'**
+  String get searchDone;
+
+  /// No description provided for @searchResults.
+  ///
+  /// In ar, this message translates to:
+  /// **'نتائج البحث'**
+  String get searchResults;
+
+  /// No description provided for @selectLanguage.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر اللغة'**
+  String get selectLanguage;
 }
 
 class _AppLangDelegate extends LocalizationsDelegate<AppLang> {

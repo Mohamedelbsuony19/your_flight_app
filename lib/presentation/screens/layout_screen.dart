@@ -6,7 +6,7 @@ import 'package:samh_task_app/presentation/screens/choose_language_screen.dart';
 import 'package:samh_task_app/presentation/screens/home_screen.dart';
 import 'package:samh_task_app/presentation/screens/search_screen.dart';
 
-import '../blocs/app/bottom_nav_bar_bloc.dart';
+import '../blocs/bottom_nav_bar/bottom_nav_bar_bloc.dart';
 
 class LayoutScreen extends StatelessWidget {
   const LayoutScreen({super.key});

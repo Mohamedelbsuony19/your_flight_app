@@ -10,7 +10,7 @@ part 'travel_data_event.dart';
 part 'travel_data_state.dart';
 
 class TravelDataBloc extends Bloc<TravelDataEvent, TravelDataState> {
-  static  int selectedIndex = 1;
+  static int selectedIndex = 1;
 
   final GetTravelsDataBaseCommand getTravelsDataCommand;
   TravelDataBloc(this.getTravelsDataCommand)
@@ -42,8 +42,8 @@ class TravelDataBloc extends Bloc<TravelDataEvent, TravelDataState> {
                   matchesTripType &&
                   matchesTravelClass;
             }).toList();
-  
-            emit(currentState.copyWith(trips: filteredTrips));
+
+            emit(currentState.copyWith(trips: filteredTrips, endSearch: true));
           }
         },
       );

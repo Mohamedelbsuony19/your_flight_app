@@ -1,12 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:samh_task_app/core/theme/app_colors.dart';
 
 /// Popup widget that you can use by default to show some information
 class CustomSnackBar extends StatefulWidget {
   const CustomSnackBar.success({
-    Key? key,
+    super.key,
     required this.message,
     this.messagePadding = const EdgeInsets.symmetric(horizontal: 24),
     this.icon = const Icon(
@@ -23,15 +22,15 @@ class CustomSnackBar extends StatefulWidget {
     this.iconRotationAngle = 32,
     this.iconPositionTop = -10,
     this.iconPositionLeft = -8,
-    this.backgroundColor = AppColors.primary,
+    this.backgroundColor = Colors.green,
     this.boxShadow = kDefaultBoxShadow,
     this.borderRadius = kDefaultBorderRadius,
     this.textScaleFactor = 1.0,
     this.textAlign = TextAlign.center,
-  }) : super(key: key);
+  });
 
   const CustomSnackBar.info({
-    Key? key,
+    super.key,
     required this.message,
     this.messagePadding = const EdgeInsets.symmetric(horizontal: 24),
     this.icon = const Icon(
@@ -53,10 +52,10 @@ class CustomSnackBar extends StatefulWidget {
     this.borderRadius = kDefaultBorderRadius,
     this.textScaleFactor = 1.0,
     this.textAlign = TextAlign.center,
-  }) : super(key: key);
+  });
 
   const CustomSnackBar.error({
-    Key? key,
+    super.key,
     required this.message,
     this.messagePadding = const EdgeInsets.symmetric(horizontal: 24),
     this.icon = const Icon(
@@ -78,7 +77,7 @@ class CustomSnackBar extends StatefulWidget {
     this.borderRadius = kDefaultBorderRadius,
     this.textScaleFactor = 1.0,
     this.textAlign = TextAlign.center,
-  }) : super(key: key);
+  });
 
   final String message;
   final Widget icon;

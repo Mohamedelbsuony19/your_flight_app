@@ -3,11 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:samh_task_app/core/constants/assets.dart';
 import 'package:samh_task_app/core/extensions/translation.dart';
 import 'package:samh_task_app/core/theme/text_style.dart';
+import 'package:samh_task_app/core/utils/show_snack_bar.dart';
 import 'package:samh_task_app/presentation/blocs/travel_data/travel_data_bloc.dart';
 import 'package:samh_task_app/presentation/widgets/date_time_picker_field.dart';
 
 import '../../core/theme/app_colors.dart';
-import '../blocs/app/bottom_nav_bar_bloc.dart';
+import '../blocs/bottom_nav_bar/bottom_nav_bar_bloc.dart';
 import 'button_widget.dart';
 
 class FormBody extends StatefulWidget {
@@ -181,7 +182,24 @@ class _FormBodyState extends State<FormBody> {
                   },
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.04),
-                BlocBuilder<TravelDataBloc, TravelDataState>(
+                BlocConsumer<TravelDataBloc, TravelDataState>(
+                  listener: (context, state) {
+                    state.maybeMap(
+                      loadSuccess: (value) {
+                        if (value.endSearch) {
+                          context.read<BottomNavBarBloc>().add(
+                                const ChangeIndexEvent(0),
+                              );
+                          ShowSnackbar.showCheckTopSnackBar(
+                            context,
+                            text: context.translate.searchDone,
+                            type: SnackBarType.success,
+                          );
+                        }
+                      },
+                      orElse: () {},
+                    );
+                  },
                   builder: (context, state) {
                     return state.maybeMap(
                       orElse: () => Container(),
@@ -300,9 +318,6 @@ class _FormBodyState extends State<FormBody> {
                               tripType: _selectedTravel!,
                               travelClass: _selectedClass!,
                             ),
-                          );
-                      context.read<BottomNavBarBloc>().add(
-                            const ChangeIndexEvent(0),
                           );
                     }
                   },

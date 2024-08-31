@@ -32,29 +32,18 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
     return Container(
       decoration: const BoxDecoration(
         color: AppColors.white,
-        // image: DecorationImage(
-        //   image: AssetImage(Assets.background),
-        //   fit: BoxFit.cover,
-        // ),
       ),
       child: Scaffold(
         backgroundColor: AppColors.scaffoldBackground,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-        ),
+        appBar: AppBar(),
         body: Center(
           child: Column(
             children: [
-              // AppLogoWidget(
-              //   width: 100.w,
-              //   height: 100.h,
-              // ),
-              // Gap(25.h),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 alignment: AlignmentDirectional.centerStart,
                 child: Text(
-                  context.translate.first,
+                  context.translate.selectLanguage,
                   style: context.titleMedium.copyWith(
                     fontWeight: FontWeight.bold,
                     color: AppColors.primary,
@@ -63,7 +52,6 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                 ),
               ),
               const SizedBox(height: 16),
-
               BlocBuilder<AppLanguageBloc, AppLanguageState>(
                 builder: (context, state) {
                   return ListView.separated(
@@ -133,10 +121,7 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> {
                   );
                 },
               ),
-
               const Spacer(),
-
-              /// Next Button
             ],
           ),
         ),

@@ -107,4 +107,13 @@ class AppLangAr extends AppLang {
 
   @override
   String get startSearch => 'ابحث اولا لترى النتائج !';
+
+  @override
+  String get searchDone => 'تم البحث بنجاح';
+
+  @override
+  String get searchResults => 'نتائج البحث';
+
+  @override
+  String get selectLanguage => 'اختر اللغة';
 }
