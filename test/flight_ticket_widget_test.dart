@@ -16,7 +16,7 @@ void main() {
 
   setUp(() {
     mockBaseDio = MockBaseDio();
-    travelsImplDataSource = TravelsImplDataSource(baseDio: mockBaseDio);
+    travelsImplDataSource = TravelsImplDataSource();
   });
 
   group('getTravelsData', () {

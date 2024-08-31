@@ -1,0 +1,318 @@
+{
+    "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dubai",
+        "Cairo",
+        "Doha",
+        "Abu Dhabi",
+        "Manama",
+        "Kuwait City",
+        "Muscat",
+        "Beirut",
+        "Amman",
+        "Istanbul",
+        "London",
+        "Paris",
+        "New York"
+    ],
+    "ticketClasses": [
+        "Economy",
+        "Business",
+        "First"
+    ],
+    "tripType": [
+        "One-way",
+        "Round-trip"
+    ],
+    "trips": [
+        {
+            "from": "Riyadh",
+            "to": "Dubai",
+            "departureDate": "2024-09-01",
+            "ticketClass": "Economy",
+            "tripType": "One-way",
+            "price": 500,
+            "passengers": {
+                "adults": 1,
+                "children": 0
+            }
+        },
+        {
+            "from": "Riyadh",
+            "to": "Cairo",
+            "departureDate": "2024-09-01",
+            "ticketClass": "Business",
+            "tripType": "Round-trip",
+            "price": 1200,
+            "passengers": {
+                "adults": 2,
+                "children": 1
+            }
+        },
+        {
+            "from": "Jeddah",
+            "to": "Doha",
+            "departureDate": "2024-09-02",
+            "ticketClass": "First",
+            "tripType": "One-way",
+            "price": 1500,
+            "passengers": {
+                "adults": 1,
+                "children": 1
+            }
+        },
+        {
+            "from": "Dubai",
+            "to": "Riyadh",
+            "departureDate": "2024-09-03",
+            "ticketClass": "Economy",
+            "tripType": "Round-trip",
+            "price": 800,
+            "passengers": {
+                "adults": 2,
+                "children": 2
+            }
+        },
+        {
+            "from": "Cairo",
+            "to": "Jeddah",
+            "departureDate": "2024-09-04",
+            "ticketClass": "Business",
+            "tripType": "One-way",
+            "price": 1100,
+            "passengers": {
+                "adults": 1,
+                "children": 0
+            }
+        },
+        {
+            "from": "Doha",
+            "to": "Abu Dhabi",
+            "departureDate": "2024-09-05",
+            "ticketClass": "First",
+            "tripType": "Round-trip",
+            "price": 2000,
+            "passengers": {
+                "adults": 2,
+                "children": 0
+            }
+        },
+        {
+            "from": "Abu Dhabi",
+            "to": "Riyadh",
+            "departureDate": "2024-09-06",
+            "ticketClass": "Economy",
+            "tripType": "One-way",
+            "price": 600,
+            "passengers": {
+                "adults": 1,
+                "children": 1
+            }
+        },
+        {
+            "from": "Manama",
+            "to": "Kuwait City",
+            "departureDate": "2024-09-07",
+            "ticketClass": "Business",
+            "tripType": "Round-trip",
+            "price": 1300,
+            "passengers": {
+                "adults": 2,
+                "children": 1
+            }
+        },
+        {
+            "from": "Kuwait City",
+            "to": "Cairo",
+            "departureDate": "2024-09-08",
+            "ticketClass": "First",
+            "tripType": "One-way",
+            "price": 1700,
+            "passengers": {
+                "adults": 1,
+                "children": 2
+            }
+        },
+        {
+            "from": "Jeddah",
+            "to": "Manama",
+            "departureDate": "2024-09-09",
+            "ticketClass": "Economy",
+            "tripType": "Round-trip",
+            "price": 900,
+            "passengers": {
+                "adults": 3,
+                "children": 1
+            }
+        },
+        {
+            "from": "Muscat",
+            "to": "Beirut",
+            "departureDate": "2024-09-10",
+            "ticketClass": "Business",
+            "tripType": "One-way",
+            "price": 1400,
+            "passengers": {
+                "adults": 1,
+                "children": 1
+            }
+        },
+        {
+            "from": "Beirut",
+            "to": "Istanbul",
+            "departureDate": "2024-09-11",
+            "ticketClass": "First",
+            "tripType": "Round-trip",
+            "price": 2200,
+            "passengers": {
+                "adults": 2,
+                "children": 1
+            }
+        },
+        {
+            "from": "Amman",
+            "to": "London",
+            "departureDate": "2024-09-12",
+            "ticketClass": "Economy",
+            "tripType": "One-way",
+            "price": 1600,
+            "passengers": {
+                "adults": 1,
+                "children": 0
+            }
+        },
+        {
+            "from": "London",
+            "to": "Paris",
+            "departureDate": "2024-09-13",
+            "ticketClass": "Business",
+            "tripType": "Round-trip",
+            "price": 1800,
+            "passengers": {
+                "adults": 2,
+                "children": 0
+            }
+        },
+        {
+            "from": "Paris",
+            "to": "New York",
+            "departureDate": "2024-09-14",
+            "ticketClass": "First",
+            "tripType": "One-way",
+            "price": 3000,
+            "passengers": {
+                "adults": 2,
+                "children": 2
+            }
+        },
+        {
+            "from": "Istanbul",
+            "to": "Riyadh",
+            "departureDate": "2024-09-15",
+            "ticketClass": "Economy",
+            "tripType": "Round-trip",
+            "price": 1000,
+            "passengers": {
+                "adults": 3,
+                "children": 1
+            }
+        },
+        {
+            "from": "New York",
+            "to": "London",
+            "departureDate": "2024-09-16",
+            "ticketClass": "Business",
+            "tripType": "One-way",
+            "price": 2500,
+            "passengers": {
+                "adults": 1,
+                "children": 0
+            }
+        },
+        {
+            "from": "Paris",
+            "to": "Dubai",
+            "departureDate": "2024-09-17",
+            "ticketClass": "First",
+            "tripType": "Round-trip",
+            "price": 3500,
+            "passengers": {
+                "adults": 2,
+                "children": 2
+            }
+        },
+        {
+            "from": "Cairo",
+            "to": "Riyadh",
+            "departureDate": "2024-09-18",
+            "ticketClass": "Economy",
+            "tripType": "One-way",
+            "price": 700,
+            "passengers": {
+                "adults": 2,
+                "children": 0
+            }
+        },
+        {
+            "from": "Dubai",
+            "to": "Jeddah",
+            "departureDate": "2024-09-19",
+            "ticketClass": "Business",
+            "tripType": "Round-trip",
+            "price": 1900,
+            "passengers": {
+                "adults": 2,
+                "children": 1
+            }
+        },
+        {
+            "from": "London",
+            "to": "Istanbul",
+            "departureDate": "2024-09-20",
+            "ticketClass": "First",
+            "tripType": "One-way",
+            "price": 2800,
+            "passengers": {
+                "adults": 1,
+                "children": 0
+            }
+        },
+        {
+            "from": "Jeddah",
+            "to": "Muscat",
+            "departureDate": "2024-09-21",
+            "ticketClass": "Economy",
+            "tripType": "Round-trip",
+            "price": 900,
+            "passengers": {
+                "adults": 2,
+                "children": 1
+            }
+        },
+        {
+            "from": "Paris",
+            "to": "London",
+            "departureDate": "2024-09-22",
+            "ticketClass": "Business",
+            "tripType": "Round-trip",
+            "price": 1600,
+            "passengers": {
+                "adults": 2,
+                "children": 0
+            }
+        },
+        {
+            "from": "Doha",
+            "to": "New York",
+            "departureDate": "2024-09-23",
+            "ticketClass": "First",
+            "tripType": "One-way",
+            "price": 3200,
+            "passengers": {
+                "adults": 2,
+                "children": 0
+            }
+        }
+    ]
+}

@@ -1,17 +1,22 @@
-import 'package:samh_task_app/core/constants/end_points.dart';
+import 'dart:convert';
 
-import '../../../core/network/dio/src/base_dio.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:samh_task_app/core/constants/assets.dart';
+
 import '../abstractions/travels_base_data_source.dart';
 
 class TravelsImplDataSource implements TravelsBaseDataSource {
-  final BaseDio _baseDio;
+  TravelsImplDataSource();
 
-  TravelsImplDataSource({required BaseDio baseDio}) : _baseDio = baseDio;
   @override
   Future<Map<String, dynamic>> getTravelsData() async {
     try {
-      final response = await _baseDio.get(EndPoints.baseUrl);
-      return response.data;
+      // Load the JSON file as a string
+      final jsonString =
+          await rootBundle.loadString(Assets.jsonData);
+      // Decode the JSON string into a Map
+      final jsonData = json.decode(jsonString) as Map<String, dynamic>;
+      return jsonData;
     } catch (e) {
       rethrow;
     }

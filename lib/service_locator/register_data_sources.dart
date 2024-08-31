@@ -5,6 +5,6 @@ import 'di_container.dart';
 
 void registerDataSources() {
   getIt.registerSingleton<TravelsBaseDataSource>(
-    TravelsImplDataSource(baseDio: getIt()),
+    TravelsImplDataSource(),
   );
 }
