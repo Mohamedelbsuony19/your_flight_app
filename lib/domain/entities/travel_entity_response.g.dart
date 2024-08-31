@@ -14,6 +14,8 @@ _$TravelEntityResponseImpl _$$TravelEntityResponseImplFromJson(
       ticketClasses: (json['ticketClasses'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),
+      tripType:
+          (json['tripType'] as List<dynamic>).map((e) => e as String).toList(),
       trips: (json['trips'] as List<dynamic>)
           .map((e) => Trip.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -24,6 +26,7 @@ Map<String, dynamic> _$$TravelEntityResponseImplToJson(
     <String, dynamic>{
       'cities': instance.cities,
       'ticketClasses': instance.ticketClasses,
+      'tripType': instance.tripType,
       'trips': instance.trips,
     };
 

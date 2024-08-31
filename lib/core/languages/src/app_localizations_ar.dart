@@ -68,4 +68,43 @@ class AppLangAr extends AppLang {
 
   @override
   String get home => 'الرئيسية';
+
+  @override
+  String get bookYourFlight => 'احجز رحلتك';
+
+  @override
+  String get enterFirstCity => 'اكتب المدينة';
+
+  @override
+  String get selectDateAndTime => 'اختر التاريخ ';
+
+  @override
+  String get travelers => 'الركاب';
+
+  @override
+  String get yourClass => 'الفئة';
+
+  @override
+  String get searchFlights => 'بحث عن رحلات';
+
+  @override
+  String get departe => 'قيام';
+
+  @override
+  String get arrive => 'الوصول';
+
+  @override
+  String get viewMore => ' مشاهدة المزيد';
+
+  @override
+  String get flightsAvailable => 'الرحلات المتاحة';
+
+  @override
+  String get selectClass => 'اختر الفئة';
+
+  @override
+  String get selectTripType => 'اختر نوع الرحلة';
+
+  @override
+  String get startSearch => 'ابحث اولا لترى النتائج !';
 }

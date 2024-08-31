@@ -8,6 +8,7 @@ class TravelEntityResponse with _$TravelEntityResponse {
   const factory TravelEntityResponse({
     required List<String> cities,
     required List<String> ticketClasses,
+    required List<String> tripType,
     required List<Trip> trips,
   }) = _TravelEntityResponse;
 

@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           locale: state.maybeMap(
             success: (value) => value.locale,
-            orElse: () => const Locale('ar'),
+            orElse: () => const Locale('en'),
           ),
           // locale: const Locale('en'),
           localizationsDelegates: AppLang.localizationsDelegates,

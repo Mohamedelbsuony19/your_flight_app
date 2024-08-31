@@ -1,10 +1,13 @@
 part of 'travel_data_bloc.dart';
 
-@freezed
+@unfreezed
 class TravelDataState with _$TravelDataState {
-  const factory TravelDataState.initial() = _Initial;
-  const factory TravelDataState.loadInProgress() = _LoadInProgress;
-  const factory TravelDataState.loadSuccess(TravelEntityResponse travelData) =
-      _LoadSuccess;
-      const factory TravelDataState.loadFailure(String message) = _LoadFailure;
+   factory TravelDataState.initial() = _Initial;
+   factory TravelDataState.loadInProgress() = _LoadInProgress;
+   factory TravelDataState.loadSuccess({
+    TravelEntityResponse? travelData,
+    List<Trip>? trips,
+    @Default(false) bool endSearch,
+  }) = _LoadSuccess;
+   factory TravelDataState.loadFailure(String message) = _LoadFailure;
 }

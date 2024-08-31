@@ -220,6 +220,84 @@ abstract class AppLang {
   /// In ar, this message translates to:
   /// **'الرئيسية'**
   String get home;
+
+  /// No description provided for @bookYourFlight.
+  ///
+  /// In ar, this message translates to:
+  /// **'احجز رحلتك'**
+  String get bookYourFlight;
+
+  /// No description provided for @enterFirstCity.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب المدينة'**
+  String get enterFirstCity;
+
+  /// No description provided for @selectDateAndTime.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر التاريخ '**
+  String get selectDateAndTime;
+
+  /// No description provided for @travelers.
+  ///
+  /// In ar, this message translates to:
+  /// **'الركاب'**
+  String get travelers;
+
+  /// No description provided for @yourClass.
+  ///
+  /// In ar, this message translates to:
+  /// **'الفئة'**
+  String get yourClass;
+
+  /// No description provided for @searchFlights.
+  ///
+  /// In ar, this message translates to:
+  /// **'بحث عن رحلات'**
+  String get searchFlights;
+
+  /// No description provided for @departe.
+  ///
+  /// In ar, this message translates to:
+  /// **'قيام'**
+  String get departe;
+
+  /// No description provided for @arrive.
+  ///
+  /// In ar, this message translates to:
+  /// **'الوصول'**
+  String get arrive;
+
+  /// No description provided for @viewMore.
+  ///
+  /// In ar, this message translates to:
+  /// **' مشاهدة المزيد'**
+  String get viewMore;
+
+  /// No description provided for @flightsAvailable.
+  ///
+  /// In ar, this message translates to:
+  /// **'الرحلات المتاحة'**
+  String get flightsAvailable;
+
+  /// No description provided for @selectClass.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر الفئة'**
+  String get selectClass;
+
+  /// No description provided for @selectTripType.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر نوع الرحلة'**
+  String get selectTripType;
+
+  /// No description provided for @startSearch.
+  ///
+  /// In ar, this message translates to:
+  /// **'ابحث اولا لترى النتائج !'**
+  String get startSearch;
 }
 
 class _AppLangDelegate extends LocalizationsDelegate<AppLang> {

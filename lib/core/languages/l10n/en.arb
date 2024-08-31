@@ -20,5 +20,18 @@
     "promoCode": "Promo Code",
     "apply": "Apply",
     "noResults": "No matching trips found",
-    "home": "Home"
+    "home": "Home",
+    "bookYourFlight": "Book Your Flight",
+    "enterFirstCity": "Enter First City",
+    "selectDateAndTime": "Select Date",
+    "travelers": "Travelers",
+    "yourClass": "Class",
+    "searchFlights": "Search Flights",
+    "departe": "Departure",
+    "arrive": "Arrival",
+    "viewMore": "View More",
+    "flightsAvailable": "Flights available",
+    "selectClass": "Select Class",
+    "selectTripType": "Select Trip Type",
+    "startSearch": "Start searching to see the result ..!"
 }

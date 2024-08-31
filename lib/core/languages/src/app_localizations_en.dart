@@ -68,4 +68,43 @@ class AppLangEn extends AppLang {
 
   @override
   String get home => 'Home';
+
+  @override
+  String get bookYourFlight => 'Book Your Flight';
+
+  @override
+  String get enterFirstCity => 'Enter First City';
+
+  @override
+  String get selectDateAndTime => 'Select Date';
+
+  @override
+  String get travelers => 'Travelers';
+
+  @override
+  String get yourClass => 'Class';
+
+  @override
+  String get searchFlights => 'Search Flights';
+
+  @override
+  String get departe => 'Departure';
+
+  @override
+  String get arrive => 'Arrival';
+
+  @override
+  String get viewMore => 'View More';
+
+  @override
+  String get flightsAvailable => 'Flights available';
+
+  @override
+  String get selectClass => 'Select Class';
+
+  @override
+  String get selectTripType => 'Select Trip Type';
+
+  @override
+  String get startSearch => 'Start searching to see the result ..!';
 }

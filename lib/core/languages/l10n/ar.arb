@@ -20,5 +20,18 @@
     "promoCode": "رمز ترويجي",
     "apply": "تطبيق",
     "noResults": "لا توجد رحلات مطابقة",
-    "home": "الرئيسية"
+    "home": "الرئيسية",
+    "bookYourFlight": "احجز رحلتك",
+    "enterFirstCity": "اكتب المدينة",
+    "selectDateAndTime": "اختر التاريخ ",
+    "travelers": "الركاب",
+    "yourClass": "الفئة",
+    "searchFlights": "بحث عن رحلات",
+    "departe": "قيام",
+    "arrive": "الوصول",
+    "viewMore": " مشاهدة المزيد",
+    "flightsAvailable": "الرحلات المتاحة",
+    "selectClass": "اختر الفئة",
+    "selectTripType": "اختر نوع الرحلة",
+    "startSearch":"ابحث اولا لترى النتائج !"
 }

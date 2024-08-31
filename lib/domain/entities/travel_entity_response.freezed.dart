@@ -22,6 +22,7 @@ TravelEntityResponse _$TravelEntityResponseFromJson(Map<String, dynamic> json) {
 mixin _$TravelEntityResponse {
   List<String> get cities => throw _privateConstructorUsedError;
   List<String> get ticketClasses => throw _privateConstructorUsedError;
+  List<String> get tripType => throw _privateConstructorUsedError;
   List<Trip> get trips => throw _privateConstructorUsedError;
 
   /// Serializes this TravelEntityResponse to a JSON map.
@@ -41,7 +42,10 @@ abstract class $TravelEntityResponseCopyWith<$Res> {
       _$TravelEntityResponseCopyWithImpl<$Res, TravelEntityResponse>;
   @useResult
   $Res call(
-      {List<String> cities, List<String> ticketClasses, List<Trip> trips});
+      {List<String> cities,
+      List<String> ticketClasses,
+      List<String> tripType,
+      List<Trip> trips});
 }
 
 /// @nodoc
@@ -62,6 +66,7 @@ class _$TravelEntityResponseCopyWithImpl<$Res,
   $Res call({
     Object? cities = null,
     Object? ticketClasses = null,
+    Object? tripType = null,
     Object? trips = null,
   }) {
     return _then(_value.copyWith(
@@ -72,6 +77,10 @@ class _$TravelEntityResponseCopyWithImpl<$Res,
       ticketClasses: null == ticketClasses
           ? _value.ticketClasses
           : ticketClasses // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      tripType: null == tripType
+          ? _value.tripType
+          : tripType // ignore: cast_nullable_to_non_nullable
               as List<String>,
       trips: null == trips
           ? _value.trips
@@ -90,7 +99,10 @@ abstract class _$$TravelEntityResponseImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {List<String> cities, List<String> ticketClasses, List<Trip> trips});
+      {List<String> cities,
+      List<String> ticketClasses,
+      List<String> tripType,
+      List<Trip> trips});
 }
 
 /// @nodoc
@@ -108,6 +120,7 @@ class __$$TravelEntityResponseImplCopyWithImpl<$Res>
   $Res call({
     Object? cities = null,
     Object? ticketClasses = null,
+    Object? tripType = null,
     Object? trips = null,
   }) {
     return _then(_$TravelEntityResponseImpl(
@@ -118,6 +131,10 @@ class __$$TravelEntityResponseImplCopyWithImpl<$Res>
       ticketClasses: null == ticketClasses
           ? _value._ticketClasses
           : ticketClasses // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      tripType: null == tripType
+          ? _value._tripType
+          : tripType // ignore: cast_nullable_to_non_nullable
               as List<String>,
       trips: null == trips
           ? _value._trips
@@ -133,9 +150,11 @@ class _$TravelEntityResponseImpl implements _TravelEntityResponse {
   const _$TravelEntityResponseImpl(
       {required final List<String> cities,
       required final List<String> ticketClasses,
+      required final List<String> tripType,
       required final List<Trip> trips})
       : _cities = cities,
         _ticketClasses = ticketClasses,
+        _tripType = tripType,
         _trips = trips;
 
   factory _$TravelEntityResponseImpl.fromJson(Map<String, dynamic> json) =>
@@ -157,6 +176,14 @@ class _$TravelEntityResponseImpl implements _TravelEntityResponse {
     return EqualUnmodifiableListView(_ticketClasses);
   }
 
+  final List<String> _tripType;
+  @override
+  List<String> get tripType {
+    if (_tripType is EqualUnmodifiableListView) return _tripType;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_tripType);
+  }
+
   final List<Trip> _trips;
   @override
   List<Trip> get trips {
@@ -167,7 +194,7 @@ class _$TravelEntityResponseImpl implements _TravelEntityResponse {
 
   @override
   String toString() {
-    return 'TravelEntityResponse(cities: $cities, ticketClasses: $ticketClasses, trips: $trips)';
+    return 'TravelEntityResponse(cities: $cities, ticketClasses: $ticketClasses, tripType: $tripType, trips: $trips)';
   }
 
   @override
@@ -178,6 +205,7 @@ class _$TravelEntityResponseImpl implements _TravelEntityResponse {
             const DeepCollectionEquality().equals(other._cities, _cities) &&
             const DeepCollectionEquality()
                 .equals(other._ticketClasses, _ticketClasses) &&
+            const DeepCollectionEquality().equals(other._tripType, _tripType) &&
             const DeepCollectionEquality().equals(other._trips, _trips));
   }
 
@@ -187,6 +215,7 @@ class _$TravelEntityResponseImpl implements _TravelEntityResponse {
       runtimeType,
       const DeepCollectionEquality().hash(_cities),
       const DeepCollectionEquality().hash(_ticketClasses),
+      const DeepCollectionEquality().hash(_tripType),
       const DeepCollectionEquality().hash(_trips));
 
   /// Create a copy of TravelEntityResponse
@@ -211,6 +240,7 @@ abstract class _TravelEntityResponse implements TravelEntityResponse {
   const factory _TravelEntityResponse(
       {required final List<String> cities,
       required final List<String> ticketClasses,
+      required final List<String> tripType,
       required final List<Trip> trips}) = _$TravelEntityResponseImpl;
 
   factory _TravelEntityResponse.fromJson(Map<String, dynamic> json) =
@@ -220,6 +250,8 @@ abstract class _TravelEntityResponse implements TravelEntityResponse {
   List<String> get cities;
   @override
   List<String> get ticketClasses;
+  @override
+  List<String> get tripType;
   @override
   List<Trip> get trips;
 
